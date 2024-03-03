@@ -46,7 +46,7 @@ $customer = $chargily_pay->customers()->create([
 /**
 * @var Chargily\ChargilyPay\Elements\CustomerElement|null
 */
-$customer = $chargily_pay->customers()->update("cuctomer_id",[
+$customer = $chargily_pay->customers()->update("customer_id",[
     "name" => "New Customer Name",
 ]);
 
