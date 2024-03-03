@@ -58,6 +58,6 @@ $customer = $chargily_pay->customers()->update("cuctomer_id",[
 /**
 * @var bool
 */
-$deleted = $chargily_pay->customers()->delete("cuctomer_id");
+$deleted = $chargily_pay->customers()->delete("customer_id");
 
 ```
