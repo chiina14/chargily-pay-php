@@ -60,7 +60,7 @@ php artisan make:model ChargilyPayment -m
 -   Routes :
 
 ```php
-Route::post('chargilypay/checkout', [ChargilyPayController::class, "checkout"])->name("chargilypay.checkout");
+Route::post('chargilypay/checkout', [ChargilyPayController::class, "redirect"])->name("chargilypay.checkout");
 Route::get('chargilypay/back', [ChargilyPayController::class, "back"])->name("chargilypay.back");
 Route::post('chargilypay/webhook', [ChargilyPayController::class, "webhook"])->name("chargilypay.webhook_endpoint");
 ```
@@ -85,7 +85,7 @@ Route::post('chargilypay/webhook', [ChargilyPayController::class, "webhook"])->n
 ### 4. Create controler
 
 ```bash
-php artisan make:controler ChargilyPayController
+php artisan make:controller ChargilyPayController
 ```
 
 -   Attach the following methods to the controller
